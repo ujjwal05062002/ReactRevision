@@ -1,7 +1,7 @@
 import React from 'react';  //optional line
 import ReactDOM from 'react-dom/client'
 import Sample, {name1, arr1, emp1, display1} from './ClassComponent/Sample';
-import SampleF from './FunctionalComponent/SampleF';
+import SampleF, {name2,arr2,emp2, display2} from './FunctionalComponent/SampleF';
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
@@ -18,5 +18,13 @@ root.render(
     {display1()}
     <hr></hr>
     <SampleF />
+    <h3>Name2 : {name2}</h3>
+    <h3>Array2 : {arr2}</h3>
+    <h3>Emp1oyee ID : {emp2.id}</h3>
+    <h3>Emp1oyee Name : {emp2.name}</h3>
+    <h3>Emp1oyee Designation : {emp2.dsg}</h3>
+    <h3>Emp1oyee City : {emp2.city}</h3>
+    <h3>Emp1oyee State : {emp2.state}</h3>
+    {display2()}
     </>
 )
