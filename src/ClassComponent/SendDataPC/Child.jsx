@@ -26,7 +26,6 @@ export default class Child extends Component{
                     <th>{item.salary} </th>
                     <th>{item.city} </th>
                     <th>{item.state} </th>
-                    
                 </tr>
                 })}
                 </tbody>
