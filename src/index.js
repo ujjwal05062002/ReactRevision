@@ -1,18 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
-import StateExample from './ClassComponent/StateExample';
-import StateExampleF from './FunctionalComponent/StateExampleF';
+import Parent from './ClassComponent/SendDataPC/Parent';
 
-
-let root  = ReactDOM.createRoot(document.getElementById("root"))
+let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-    <StateExample />
-    <hr />
-    <StateExampleF />
+    <Parent />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client'
+// import StateExample from './ClassComponent/StateExample';
+// import StateExampleF from './FunctionalComponent/StateExampleF';
+
+
+// let root  = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//     <StateExample />
+//     <hr />
+//     <StateExampleF />
+//     </>
+// )
 
 
 
