@@ -1,7 +1,8 @@
 import React from 'react';
 
 import ReactDOM from 'react-dom/client'
-import Parent from './FunctionalComponent/SendDataPC/Parent';
+import Parent from './ClassComponent/SendDataCP/Parent';
+// import Parent from './FunctionalComponent/SendDataPC/Parent';
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
