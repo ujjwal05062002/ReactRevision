@@ -1,16 +1,38 @@
-import React from 'react';
+import React from "react";
 
 import ReactDOM from 'react-dom/client'
-import Parent from './FunctionalComponent/SendDataCP/Parent';
+import CSSExample from "./FunctionalComponent/CSSExample";
 
-let root  = ReactDOM.createRoot(document.getElementById("root"))
+let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-    <Parent />
-    
+        <CSSExample />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+
+// import ReactDOM from 'react-dom/client'
+// import Parent from './FunctionalComponent/SendDataCP/Parent';
+
+// let root  = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//     <Parent />
+
+//     </>
+// )
 
 
 
