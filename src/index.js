@@ -1,16 +1,44 @@
 import React from 'react';
 
 import ReactDOM from 'react-dom/client'
-import Parent from './ClassComponent/SendDataCP/Parent';
-// import Parent from './FunctionalComponent/SendDataPC/Parent';
+import Parent from './FunctionalComponent/SendDataCP/Parent';
 
-let root = ReactDOM.createRoot(document.getElementById("root"))
+let root  = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
     <Parent />
+    
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+
+// import ReactDOM from 'react-dom/client'
+// import Parent from './ClassComponent/SendDataCP/Parent';
+// // import Parent from './FunctionalComponent/SendDataPC/Parent';
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//     <Parent />
+//     </>
+// )
 
 
 
