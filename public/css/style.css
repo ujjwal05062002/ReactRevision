@@ -5,13 +5,14 @@
 .main{
     width: 100vw;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
 }
 
 .center{
     width: 80%;
     height: 80%;
+    margin: auto;
 }
 
 .items{
@@ -23,4 +24,37 @@
 
 .items img{
     width: 100%;
+}
+
+
+.center h2{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.center h3{
+    width: 98%;
+    background-color: green;
+    color:  white;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.center input{
+    width: 98%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.center button{
+    width: 100%;
+    background-color: green;
+    color:  white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
 }

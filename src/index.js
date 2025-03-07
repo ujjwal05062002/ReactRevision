@@ -1,15 +1,44 @@
 import React from "react";
 
 import ReactDOM from 'react-dom/client'
-import CSSExample from "./FunctionalComponent/CSSExample";
+
+import SingleInputExample from './ClassComponent/SingleInputExample'
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-        <CSSExample />
+        <SingleInputExample />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+
+// import ReactDOM from 'react-dom/client'
+// import CSSExample from "./FunctionalComponent/CSSExample";
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//         <CSSExample />
+//     </>
+// )
 
 
 
