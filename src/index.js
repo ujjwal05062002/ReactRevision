@@ -2,13 +2,13 @@ import React from "react";
 
 import ReactDOM from 'react-dom/client'
 
-import SingleInputExample from './ClassComponent/SingleInputExample'
+import MultipleInputExample from "./ClassComponent/MultipleInputExample";
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-        <SingleInputExample />
+        <MultipleInputExample />
     </>
 )
 
