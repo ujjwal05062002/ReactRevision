@@ -1,19 +1,47 @@
-import React from "react";
-
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-// import MultipleInputExample from "./ClassComponent/MultipleInputExample";
-import SingleInputF from "./FunctionalComponent/SingleInputF";
-
+import MultiInputF from './FunctionalComponent/MultiInputF'
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-        {/* <MultipleInputExample /> */}
-        <SingleInputF />
+    <MultiInputF />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+
+// import ReactDOM from 'react-dom/client'
+
+// // import MultipleInputExample from "./ClassComponent/MultipleInputExample";
+// import SingleInputF from "./FunctionalComponent/SingleInputF";
+
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//         {/* <MultipleInputExample /> */}
+//         <SingleInputF />
+//     </>
+// )
 
 
 
