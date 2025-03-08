@@ -18,23 +18,31 @@ export default class MultipleInputExample extends Component {
   getInputExample(e) {
     let {name,value} = e.target
 
-    if (name === "name")
-        this.setState({name:value})
-    else if (name === "email")
-        this.setState({email:value})
-    else if (name === "phone")
-        this.setState({phone:value})
-    else if (name === "designation")
-        this.setState({designation:value})
-    else if (name === "salary")
-        this.setState({salary:value})
-    else if (name === "city")
-        this.setState({city:value})
-    else 
-        this.setState({stateName:value})
+    this.setState(()=>{
+        return {
+            ...this.state,
+            [name]:value
+        }
+    })
+
+//     if (name === "name")
+//         this.setState({name:value})
+//     else if (name === "email")
+//         this.setState({email:value})
+//     else if (name === "phone")
+//         this.setState({phone:value})
+//     else if (name === "designation")
+//         this.setState({designation:value})
+//     else if (name === "salary")
+//         this.setState({salary:value})
+//     else if (name === "city")
+//         this.setState({city:value})
+//     else 
+//         this.setState({stateName:value})
   }
 
-  postData() {
+  postData(e) {
+    e.preventDefault()
     alert(`
         Name : ${this.state.name},
         email : ${this.state.email},
