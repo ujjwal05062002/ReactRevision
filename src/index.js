@@ -1,14 +1,45 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client'
-import App from './FunctionalComponent/RouterExample/App';
+import BootStrapExample from './FunctionalComponent/BootStrapExample';
+
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-        <App />
+    <BootStrapExample />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client'
+// import App from './FunctionalComponent/RouterExample/App';
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//         <App />
+//     </>
+// )
 
 
 
