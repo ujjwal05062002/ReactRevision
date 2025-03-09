@@ -1,14 +1,39 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
-import MultiInputF from './FunctionalComponent/MultiInputF'
+import App from './FunctionalComponent/RouterExample/App';
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-    <MultiInputF />
+        <App />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import ReactDOM from 'react-dom/client'
+// import MultiInputF from './FunctionalComponent/MultiInputF'
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//     <MultiInputF />
+//     </>
+// )
 
 
 
