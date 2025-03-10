@@ -1,6 +1,19 @@
 import React from "react";
 
 export default function BootStrapExample() {
+  let data = [
+    { name: "Product1", pic: "/img/img1.jpg" },
+    { name: "Product2", pic: "/img/img2.jpg" },
+    { name: "Product3", pic: "/img/img3.jpg" },
+    { name: "Product4", pic: "/img/img4.jpg" },
+    { name: "Product5", pic: "/img/img5.jpg" },
+    { name: "Product6", pic: "/img/img6.jpg" },
+    { name: "Product7", pic: "/img/img7.jpg" },
+    { name: "Product8", pic: "/img/img8.jpg" },
+    { name: "Product9", pic: "/img/img9.jpg" },
+    { name: "Product10", pic: "/img/img10.jpg" },
+  ];
+
   return (
     <>
       {/* --------------------------------------------- navbar here------------------------------------------   */}
@@ -172,34 +185,84 @@ export default function BootStrapExample() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/img/img1.jpg" className="d-block w-100" height="500px" alt="Source not found" />
+            <img
+              src="/img/img1.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source not found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img2.jpg" className="d-block w-100" height="500px" alt="Source not found" />
+            <img
+              src="/img/img2.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source not found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img3.jpg" className="d-block w-100" height="500px" alt="Source not found" />
+            <img
+              src="/img/img3.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source not found"
+            />
           </div>
           <div className="carousel-item active">
-            <img src="/img/img4.jpg" className="d-block w-100" height="500px" alt="Source not found" />
+            <img
+              src="/img/img4.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source not found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img5.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img5.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img6.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img6.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
           <div className="carousel-item active">
-            <img src="/img/img7.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img7.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img8.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img8.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img9.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img9.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
           <div className="carousel-item">
-            <img src="/img/img10.jpg" className="d-block w-100" height="500px" alt="Source Not Found" />
+            <img
+              src="/img/img10.jpg"
+              className="d-block w-100"
+              height="500px"
+              alt="Source Not Found"
+            />
           </div>
         </div>
         <button
@@ -208,7 +271,10 @@ export default function BootStrapExample() {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -217,13 +283,50 @@ export default function BootStrapExample() {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
 
-      <h5>Latest Products</h5>
-       
+      <h5 className="background text-light text-center pt-2 pb-2 my-1">
+        Latest Products
+      </h5>
+
+      {/*making grid system */}
+      <div className="container">
+        <div className="row">
+          {data.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-2 "
+              >
+                <div className="card">
+                  <img src={item.pic} className="card-img-top" alt="Not Found" height="200px" />
+                  <div className="card-body">
+                    <h5 className="card-title">{item.name}</h5>
+                    <p className="card-text">
+                      <del>&#8377; 5000</del>  &#8377; 3500
+                    </p>
+                    <a href="#" className="btn btn-primary">
+                      Add To Cart
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }
+
+// grid system in bootstrap for responsive layout
+
+<div className="row">
+  <div className="col-lg-3 col-md-4 col-6"></div>
+</div>;
