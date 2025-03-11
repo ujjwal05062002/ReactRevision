@@ -290,7 +290,10 @@ export default function BootStrapExample() {
         Latest Products
       </h5>
 
-      {/*making grid system */}
+
+
+      {/*-----------------------making grid system--------------------------------------------------- */}
+
       <div className="container">
         <div className="row">
           {data.map((item, index) => {
@@ -317,9 +320,9 @@ export default function BootStrapExample() {
         </div>
       </div>
 
-      <div className="row mb-3 container-fluid">
+      <div className="row mb-3 container-fluid mt-2">
         <div className="col-md-6">
-          <img src="/img/img3.jpg" alt=""  width="100%" height="400px"  className=""/>
+          <img src="/img/img3.jpg" alt=""  width="100%" height="560px"  className=""/>
         </div>
         <div className="col-md-6">
           <h5 className="background text-light text-center p-2">Contact Us</h5>
@@ -340,10 +343,31 @@ export default function BootStrapExample() {
             </div>
           </div>
 
-          <div className="mb3">
-            <label htmlFor=""></label>
+          <div className="row mb-2">
+          <div className="mb-3 col-md-6">
+              <label htmlFor="village">Village</label>
+              <input type="village" placeholder="Enter village name"  className="form-control" name="village"/>
+            </div>
+            <div className="mb-3 col-md-6">
+              <label htmlFor="town">Town</label>
+              <input type="text" placeholder="Enter town name"  className="form-control" name="town"/>
+            </div>
+            </div>
+
+          <div className="mb-3">
+            <label htmlFor="city" className="mb-2">City</label>
+            <input type="text" name="city" placeholder="City Name"  className="form-control" />
           </div>
-            
+           
+
+           <div className="mb-3">
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message..." className="form-control" rows="3"></textarea>
+           </div>
+
+           <div className="mb-3">
+            <button type="submit" className="form-control background text-white btn-sm w-100">Submit</button>
+           </div>
           </form>
         </div>
       </div>
