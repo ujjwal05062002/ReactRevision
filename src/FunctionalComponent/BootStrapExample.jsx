@@ -50,11 +50,6 @@ export default function BootStrapExample() {
                   About
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link text-light" href="#">
-                  About
-                </a>
-              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link text-light dropdown-toggle"
@@ -321,12 +316,43 @@ export default function BootStrapExample() {
           })}
         </div>
       </div>
+
+      <div className="row mb-3 container-fluid">
+        <div className="col-md-6">
+          <img src="/img/img3.jpg" alt=""  width="100%" height="400px"  className=""/>
+        </div>
+        <div className="col-md-6">
+          <h5 className="background text-light text-center p-2">Contact Us</h5>
+          <form>
+            <div className="mb-3">
+              <label htmlFor="name" className="mb-2">Name</label>
+              <input type="text" name="name" placeholder="Full Name" className="form-control"/>
+            </div>
+
+          <div className="row">
+          <div className="mb-3 col-md-6">
+            <label htmlFor="email" className="mb-2">Email</label>
+              <input type="email" name="email" placeholder="Email Address" className="form-control"/>
+            </div>
+            <div className="mb-3 col-md-6">
+            <label htmlFor="phone" className="mb-2">Phone</label>
+              <input type="text" name="phone" placeholder="Phone" className="form-control"/>
+            </div>
+          </div>
+
+          <div className="mb3">
+            <label htmlFor=""></label>
+          </div>
+            
+          </form>
+        </div>
+      </div>
     </>
   );
 }
 
 // grid system in bootstrap for responsive layout
 
-<div className="row">
-  <div className="col-lg-3 col-md-4 col-6"></div>
-</div>;
+// <div className="row">
+//   <div className="col-lg-3 col-md-4 col-6"></div>
+// </div>;
