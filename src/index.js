@@ -1,16 +1,41 @@
 import React from 'react';
-
 import ReactDOM from 'react-dom/client'
-import BootStrapExample from './FunctionalComponent/BootStrapExample';
+import MaterialUIExample from './FunctionalComponent/MaterialUIExample'
 
-
-let root = ReactDOM.createRoot(document.getElementById("root"))
+let root   = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
     <>
-    <BootStrapExample />
+        <MaterialUIExample />
     </>
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+
+// import ReactDOM from 'react-dom/client'
+// import BootStrapExample from './FunctionalComponent/BootStrapExample';
+
+
+// let root = ReactDOM.createRoot(document.getElementById("root"))
+
+// root.render(
+//     <>
+//     <BootStrapExample />
+//     </>
+// )
 
 
 
